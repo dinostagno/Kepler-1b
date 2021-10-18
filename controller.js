@@ -6,7 +6,7 @@ function getValues() {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 00D2E000000mpVn!ARIAQIj7Jfg3gx58Mixxwws_IQ2oQcJF2_1wkIypQZcXKp5yYMjCdjMvPG9DmsrP5npJNiEFscHahM.Uj9UN5KCqOfqEREm0'
+            'Authorization': 'Bearer 00D2E000000mpVn!ARIAQCxhTq9cjxrjJOPICFKi6iobwHJrJ3sUc6H6iIXdYPUNBR0yM.AqHQK_TvSzuLb5JH31nuPvbawCCsttPpW5MeaV4A2r'
         },
         
     })
