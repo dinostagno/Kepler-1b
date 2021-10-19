@@ -2,6 +2,7 @@ body{
     background: rgb(212,214,226);
     background: radial-gradient(circle, rgba(212,214,226,1) 0%, rgba(211,223,252,1) 100%);
     overflow: -moz-hidden-unscrollable;
+    scroll-behavior: smooth;
     
 }
 #modal1{
