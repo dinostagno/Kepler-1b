@@ -1,6 +1,6 @@
 body{
-    background: rgb(177,186,230);
-    background: radial-gradient(circle, rgba(177,186,230,1) 0%, rgba(97,116,161,1) 100%);
+    background: rgb(212,214,226);
+    background: radial-gradient(circle, rgba(212,214,226,1) 0%, rgba(211,223,252,1) 100%);
 }
 #modal1{
     overflow-x: visible;
