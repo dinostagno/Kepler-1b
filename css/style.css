@@ -1,6 +1,5 @@
 body{
-    background: rgb(25,25,27);
-    background: linear-gradient(90deg, rgba(25,25,27,1) 17%, rgba(0,212,255,1) 51%, rgba(9,9,121,1) 86%);
+    background: #222244;
     overflow: -moz-hidden-unscrollable;
     scroll-behavior: smooth;
     
