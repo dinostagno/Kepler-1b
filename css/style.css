@@ -8,4 +8,6 @@ body{
 #modal1{
     overflow-x: visible;
 }
-
+.collapsible-header {
+    background: black;
+}
