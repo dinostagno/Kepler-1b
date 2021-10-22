@@ -2,7 +2,7 @@ function getValues() {
     var value = document.getElementById("last_name").value;
     console.log(value);
     
-    fetch('https://dinostagno-dev-ed.my.salesforce.com//services/apexrest/Accounts/0012E00002e4HURQA2', {
+    fetch('https://dinostagno-dev-ed.my.salesforce.com/services/apexrest/Accounts/0012E00002e4HURQA2', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
