@@ -41,6 +41,25 @@ function loadService() {
     for(code of urlSearchParams.entries()) {
         console.log(code[1]);
     }
+    var client_id ='3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn';
+    var client_secret = '5CC14D5C61AB61C49E16DE550455A03AFB12B578F88B32D548BD5585F5707E54';
+    var grant_type = 'authorization_code';
+    var codeFromUrl = code;
+    var redirect_uri = 'https://dinostagno.github.io/Kepler-1b/';
+    urlIdentify='https://login.salesforce.com/services/oauth2/token?client_id='+client_id+'&client_secret='+client_secret+'&grant_type='+grant_type+'&code='+codeFromUrl+'&redirect_uri='+redirect_uri;
+
+    const getCovidData = async () => {
+        console.log("index.html 10 | Processing...");
+        const request = await fetch(urlIdentify, {
+          method: 'GET'    
+      });
+        const data = await request.json();
+        return data;
+      };
+      getCovidData().then(covidData => {
+        console.log("data", covidData);
+        //document.getElementById("total-cases").innerText = covidData.confirmed.value;
+      })
    
     //const valuecode = params.get('code');
     //console.log(params);
