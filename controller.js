@@ -50,7 +50,7 @@ function loadService() {
     console.log(urlIdentify);
 
     const getCovidData = async () => {
-        console.log("index.html 10 | Processing...");
+
         const request = await fetch(urlIdentify, {
           method: 'POST'    
       });
@@ -60,8 +60,8 @@ function loadService() {
       getCovidData().then(covidData => {
         console.log("data", covidData);
         //document.getElementById("total-cases").innerText = covidData.confirmed.value;
-      })
-   
+      });
+    }
     //const valuecode = params.get('code');
     //console.log(params);
     /*console.log("index.html 7 | Get Covid Data");
