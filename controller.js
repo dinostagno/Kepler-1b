@@ -51,7 +51,7 @@ function loadService() {
     const getCovidData = async () => {
         console.log("index.html 10 | Processing...");
         const request = await fetch(urlIdentify, {
-          method: 'GET'    
+          method: 'POST'    
       });
         const data = await request.json();
         return data;
