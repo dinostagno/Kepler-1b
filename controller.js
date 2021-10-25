@@ -36,8 +36,8 @@ function loadService() {
     var urlvalue = window.location.href;
     console.log(urlvalue);
     const urlSearchParams = new URLSearchParams(window.location.href);
-    const params = Object.fromEntries(urlSearchParams.entries());
-    for(var pair of urlSearchParams) {
+    //const params = Object.fromEntries(urlSearchParams.entries());
+    for(var pair of urlSearchParams.entries()) {
         console.log(pair[0]+ ', '+ pair[1]);
     }
     //const valuecode = params.get('code');
