@@ -31,7 +31,7 @@ function ShowHelloMessage() {
 }
 function loadService() {
     //location.href ="http://www.pagina1.com";
-    var url = window.location.search.startsWith('?code=');
+    var url = window.location.href.startsWith('?code=');
     console.log(url);
     var urlvalue = window.location.href;
     console.log(urlvalue);
