@@ -57,4 +57,6 @@ function identify() {
     var urlIdentify='https://login.salesforce.com/services/oauth2/authorize?client_id='+client_id+'&redirect_uri='+redirect_uri+'&response_type='+response_type;
     console.log(urlIdentify);
     location.href = urlIdentify;
+    var url = window.location.search.startsWith('?code=');
+    console.log(url);
 }
