@@ -41,7 +41,7 @@ function loadService() {
         console.log(pair[0]+ ', '+ pair[1]);
     }
     //const valuecode = params.get('code');
-    console.log(params);
+    //console.log(params);
     /*console.log("index.html 7 | Get Covid Data");
     const getCovidData = async () => {
       console.log("index.html 10 | Processing...");
