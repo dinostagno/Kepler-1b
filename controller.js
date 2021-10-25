@@ -30,7 +30,8 @@ function ShowHelloMessage() {
     document.getElementById("hellomessage").innerHTML = "Hello, " + name.value;
 }
 function loadService() {
-    console.log("index.html 7 | Get Covid Data");
+    location.href ="http://www.pagina1.com";
+    /*console.log("index.html 7 | Get Covid Data");
     const getCovidData = async () => {
       console.log("index.html 10 | Processing...");
       const request = await fetch('https://dinostagno-dev-ed.my.salesforce.com//services/apexrest/Accounts/0012E00002e4HURQA2', {
@@ -47,5 +48,13 @@ function loadService() {
     getCovidData().then(covidData => {
       console.log("data", covidData);
       //document.getElementById("total-cases").innerText = covidData.confirmed.value;
-    });
+    });*/
+}
+function identify() {
+    var client_id = '3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn';
+    var redirect_uri = 'https://login.salesforce.com/services/oauth2/callback';
+    var response_type = 'code';
+    var urlIdentify='https://login.salesforce.com/services/oauth2/authorize?client_id='+client_id+'&redirect_uri='+redirect_uri+'&response_type='+response_type;
+    console.log(urlIdentify);
+    location.href = urlIdentify;
 }
