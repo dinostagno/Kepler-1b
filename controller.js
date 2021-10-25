@@ -37,6 +37,9 @@ function loadService() {
     console.log(urlvalue);
     const urlSearchParams = new URLSearchParams(window.location.href);
     const params = Object.fromEntries(urlSearchParams.entries());
+    for(var pair of urlSearchParams) {
+        console.log(pair[0]+ ', '+ pair[1]);
+    }
     //const valuecode = params.get('code');
     console.log(params);
     /*console.log("index.html 7 | Get Covid Data");
