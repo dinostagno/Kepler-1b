@@ -35,6 +35,9 @@ function loadService() {
     console.log(url);
     var urlvalue = window.location.href;
     console.log(urlvalue);
+    const urlSearchParams = new URLSearchParams(window.location.href);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    console.log(params);
     /*console.log("index.html 7 | Get Covid Data");
     const getCovidData = async () => {
       console.log("index.html 10 | Processing...");
