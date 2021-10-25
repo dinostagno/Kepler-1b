@@ -46,12 +46,12 @@ function loadService() {
     var grant_type = 'authorization_code';
     var codeFromUrl = code;
     var redirect_uri = 'https://dinostagno.github.io/Kepler-1b/';
-    urlIdentify='https://login.salesforce.com/services/oauth2/token?client_id='+client_id+'&client_secret='+client_secret+'&grant_type='+grant_type+'&code='+codeFromUrl+'&redirect_uri='+redirect_uri;
+    var urlIdentify='https://login.salesforce.com/services/oauth2/token?client_id='+client_id+'&client_secret='+client_secret+'&grant_type='+grant_type+'&code='+codeFromUrl+'&redirect_uri='+redirect_uri;
 
     const getCovidData = async () => {
         console.log("index.html 10 | Processing...");
         const request = await fetch(urlIdentify, {
-          method: 'POST'    
+          method: 'GET'    
       });
         const data = await request.json();
         return data;
