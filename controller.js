@@ -30,7 +30,9 @@ function ShowHelloMessage() {
     document.getElementById("hellomessage").innerHTML = "Hello, " + name.value;
 }
 function loadService() {
-    location.href ="http://www.pagina1.com";
+    //location.href ="http://www.pagina1.com";
+    var url = window.location.search.startsWith('?code=');
+    console.log(url);
     /*console.log("index.html 7 | Get Covid Data");
     const getCovidData = async () => {
       console.log("index.html 10 | Processing...");
