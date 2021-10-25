@@ -33,6 +33,8 @@ function loadService() {
     //location.href ="http://www.pagina1.com";
     var url = window.location.search.startsWith('?code=');
     console.log(url);
+    var urlvalue = window.location.href;
+    console.log(urlvalue);
     /*console.log("index.html 7 | Get Covid Data");
     const getCovidData = async () => {
       console.log("index.html 10 | Processing...");
