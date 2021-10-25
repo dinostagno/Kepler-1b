@@ -47,6 +47,7 @@ function loadService() {
     var codeFromUrl = code;
     var redirect_uri = 'https://dinostagno.github.io/Kepler-1b/';
     var urlIdentify='https://login.salesforce.com/services/oauth2/token?client_id='+client_id+'&client_secret='+client_secret+'&grant_type='+grant_type+'&code='+codeFromUrl+'&redirect_uri='+redirect_uri;
+    console.log(urlIdentify);
 
     const getCovidData = async () => {
         console.log("index.html 10 | Processing...");
