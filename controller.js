@@ -73,3 +73,6 @@ function identify() {
     var url = window.location.search.startsWith('?code=');
     console.log(url);
 }
+function accessToOrg(){
+    
+}
