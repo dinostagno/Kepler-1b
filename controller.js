@@ -87,10 +87,6 @@ function OauthValues() {
         console.log("index.html 10 | Processing...");
         const request = await fetch('https://login.salesforce.com/services/oauth2/token', {
           method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-              'Authorization': 'Bearer 00D2E000000mpVn!ARIAQBTuNlYHrz4FKDE9oFebuSn.iK4AQfkHPKLvBGOHnzgH_7Br9ylq46ceocEk4SZCFwGtVlitoDg.UUlePO_jH01zHcc7'
-          },
           body: {
               'grant_type': 'password',
               'client_id': '3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn',
@@ -104,7 +100,7 @@ function OauthValues() {
         return data;
       };
       getOauthValues().then(covidData => {
-        console.log("data", covidData);
+        console.log('data', covidData);
         //document.getElementById("total-cases").innerText = covidData.confirmed.value;
       });
     
