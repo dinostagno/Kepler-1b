@@ -74,5 +74,11 @@ function identify() {
     console.log(url);
 }
 function accessToOrg(){
-    
+    var client_id = '3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn';
+    var redirect_uri = 'https://dinostagno.github.io/Kepler-1b/home.html';
+    var response_type = 'code';
+    var urlIdentify='https://login.salesforce.com/services/oauth2/authorize?client_id='+client_id+'&redirect_uri='+redirect_uri+'&response_type='+response_type;
+    console.log(urlIdentify);
+    location.href = urlIdentify;
+
 }
