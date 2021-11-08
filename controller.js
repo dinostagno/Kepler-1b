@@ -82,3 +82,30 @@ function accessToOrg(){
     location.href = urlIdentify;
 
 }
+function OauthValues() {
+    const getOauthValues = async () => {
+        console.log("index.html 10 | Processing...");
+        const request = await fetch('https://login.salesforce.com/services/oauth2/token', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer 00D2E000000mpVn!ARIAQBTuNlYHrz4FKDE9oFebuSn.iK4AQfkHPKLvBGOHnzgH_7Br9ylq46ceocEk4SZCFwGtVlitoDg.UUlePO_jH01zHcc7'
+          },
+          body: {
+              'grant_type': 'password',
+              'client_id': '3MVG9ZF4bs_.MKuhz4g8P5ekGrXZkNs0a2sba0CwY.6lhSXpZM4H.CM6okSQmxTiF0DMhGyMza2a_E4zfHbKn',
+              'client_secret': '5CC14D5C61AB61C49E16DE550455A03AFB12B578F88B32D548BD5585F5707E54',
+              'username': 'dpaolostagno@gmail.com',
+              'password': 'FanBurguer@2021MU716uf4CuhXZysGCAlefhndm'
+          },
+          
+      });
+        const data = await request.json();
+        return data;
+      };
+      getOauthValues().then(covidData => {
+        console.log("data", covidData);
+        //document.getElementById("total-cases").innerText = covidData.confirmed.value;
+      });
+    
+}
