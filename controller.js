@@ -108,3 +108,4 @@ function OauthValues() {
 function getValues1() {
     
 }
+$( document ).ready(function)
